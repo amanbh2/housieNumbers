@@ -11,7 +11,20 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Welcome</h1>
+    <div class="container">
+        <h1>Housie Number Generator</h1>
+        <div class="display">
+            <p id="current-number">--</p>
+        </div>
+        <div class="buttons">
+            <button id="generate-button">Generate Number</button>
+            <button id="reset-button">Reset</button>
+        </div>
+        <div class="history">
+            <h2>Numbers Called:</h2>
+            <div id="called-numbers"></div>
+        </div>
+    </div>
 
 
     <script src="app.js"></script>
