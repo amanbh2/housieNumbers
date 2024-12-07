@@ -45,6 +45,9 @@ h1 {
     color: #ff4d4d;
 }
 
+#current-number{
+    color: white;
+}
 .display {
     margin: 20px 0;
     font-size: 3rem;
@@ -67,6 +70,12 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+#reset-button{
+    background-color: transparent;
+    color: #ff4d4d;
+    border: solid 1px #ff4d4d;
 }
 
 button:hover {
@@ -97,7 +106,7 @@ button:hover {
 }
 
 #footer{
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     text-align: center;
     width: 100%;

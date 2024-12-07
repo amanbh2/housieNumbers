@@ -11,7 +11,7 @@ let calledNumbers = [];
 // Function to generate a random number
 function generateRandomNumber() {
     if (calledNumbers.length === maxNumber) {
-        alert("All numbers have been called!");
+        alert("Game Over!\nAll numbers have been called!");
         return;
     }
 
@@ -26,7 +26,7 @@ function generateRandomNumber() {
     currentNumberDisplay.textContent = randomNumber.toString().padStart(2, '0');
     const numberElement = document.createElement('span');
     numberElement.textContent = randomNumber.toString().padStart(2, '0');
-    calledNumbersContainer.appendChild(numberElement);
+    calledNumbersContainer.insertBefore(numberElement, calledNumbersContainer.firstChild);
 }
 
 // Function to reset the game
