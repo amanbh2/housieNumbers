@@ -25,7 +25,7 @@ function generateRandomNumber() {
     // Update the UI
     currentNumberDisplay.textContent = randomNumber.toString().padStart(2, '0');
     const numberElement = document.createElement('span');
-    numberElement.textContent = randomNumber;
+    numberElement.textContent = randomNumber.toString().padStart(2, '0');
     calledNumbersContainer.appendChild(numberElement);
 }
 
