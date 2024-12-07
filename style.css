@@ -14,8 +14,15 @@ html a{
     text-decoration: none;
 }
 
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: josefin-sans, sans-serif;
     text-align: center;
     background-color: #1e1e2f;
     color: #e0e0e0;
@@ -29,19 +36,20 @@ body {
     max-width: 600px;
     padding: 20px;
     background: #2a2a40;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 15px;
 }
 
 h1 {
-    color: #ff6f61;
+    color: #ff4d4d;
 }
 
 .display {
     margin: 20px 0;
     font-size: 3rem;
     font-weight: bold;
-    color: #ff6f61;
+    color: #ff4d4d;
 }
 
 .buttons {
@@ -51,8 +59,9 @@ h1 {
 button {
     padding: 10px 20px;
     font-size: 1rem;
+    font-weight: bold;
     margin: 5px;
-    background-color: #ff6f61;
+    background-color: #ff4d4d;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -62,6 +71,7 @@ button {
 
 button:hover {
     background-color: #e65b4d;
+    
 }
 
 .history {
@@ -74,6 +84,7 @@ button:hover {
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
+    justify-content: space-around;
 }
 
 #called-numbers span {
@@ -82,5 +93,21 @@ button:hover {
     color: #e0e0e0;
     border-radius: 5px;
     font-size: 1rem;
-    border: 1px solid #ff6f61;
+    border: 1px solid #ff4d4d;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 25px;
+    font-size: 11px;
+}
+
+@media (min-width: 768px) {
+    #footer{
+        font-size: 12px;
+        font-weight: bold;
+    }
 }

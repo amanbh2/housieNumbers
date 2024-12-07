@@ -7,23 +7,32 @@
     <meta name="description" content="Housie, Tambola, Bingo random number generator">
     <meta name="keywords" content="Housie, Bingo, Tambola, Numbers, Generator, Random">
     <meta name="author" content="Aman Bhaskar">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="res/dice.svg" type="image/x-icon">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Housie Number Generator</h1>
+        <h1>Let's Play Housie</h1>
         <div class="display">
-            <p id="current-number">--</p>
+            <p id="current-number">..</p>
         </div>
         <div class="buttons">
             <button id="generate-button">Generate Number</button>
             <button id="reset-button">Reset</button>
         </div>
         <div class="history">
-            <h2>Numbers Called:</h2>
+            <h4>Numbers Called:</h4>
             <div id="called-numbers"></div>
         </div>
+    </div>
+    <div id="footer">
+        <p class="footlines" id="gpt">Aman Bhaskar  © 2025 | created using chatGPT</p>
     </div>
 
 
