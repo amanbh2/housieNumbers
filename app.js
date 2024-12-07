@@ -32,7 +32,7 @@ function generateRandomNumber() {
 // Function to reset the game
 function resetGame() {
     calledNumbers = [];
-    currentNumberDisplay.textContent = '--';
+    currentNumberDisplay.textContent = '..';
     calledNumbersContainer.innerHTML = '';
 }
 
